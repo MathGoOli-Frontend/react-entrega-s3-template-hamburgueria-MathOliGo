@@ -4,6 +4,8 @@ export const GlobalStyle = createGlobalStyle`
     :root {
     	--color-color-primary: #27ae60;
     	--color-color-secondary: #eb5757;
+		--color-white: #ffffff;
+		--color-header-gray: #f5f5f5;
     	--color-grey-600: #333333;
     	--color-grey-300: #828282;
     	--color-grey-100: #e0e0e0;
@@ -11,9 +13,15 @@ export const GlobalStyle = createGlobalStyle`
     	--color-warning: #ffcd07;
     	--color-sucess: #168821;
     	--color-information: #155bcb;
+
+		--input-font-size: 1.6rem;
+
+		--radius: 5px;
     }
 
-
+	*{
+		box-sizing: border-box;
+	}
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,

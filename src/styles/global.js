@@ -68,4 +68,7 @@ export const GlobalStyle = createGlobalStyle`
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+	button{
+		cursor: pointer;
+	}
 `

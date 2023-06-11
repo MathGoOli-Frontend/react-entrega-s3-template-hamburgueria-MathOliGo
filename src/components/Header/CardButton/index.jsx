@@ -1,12 +1,15 @@
-import cart from "../../../assets/card.svg"
+import cartImg from "../../../assets/card.svg"
 import { StyledCardButton } from "./style.js"
 
-export const CartButton = ({cartList}) => {
 
+export const CartButton = ({cart, setIsOpen}) => {
+
+
+    
     return(
-        <StyledCardButton>
-            <img src={cart} alt=""/>
-            <span>15</span>
+        <StyledCardButton onClick={() => setIsOpen(true)}>
+            <img src={cartImg} alt=""/>
+            <span>{cart.length}</span>
         </StyledCardButton>
     )
 }

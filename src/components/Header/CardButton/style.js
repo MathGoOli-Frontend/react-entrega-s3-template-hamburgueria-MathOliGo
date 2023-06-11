@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledCardButton = styled.button`
-    width: 3rem;
-    height: 3rem;
+    width: 3.4rem;
+    height: 3.4rem;
     border: none;
     background-color: transparent;
     
@@ -14,7 +14,7 @@ export const StyledCardButton = styled.button`
         border-radius: 4px;
 
         position: relative;
-        bottom: 2rem;
+        bottom: 2.5rem;
         left: 1rem;
     }
     img{

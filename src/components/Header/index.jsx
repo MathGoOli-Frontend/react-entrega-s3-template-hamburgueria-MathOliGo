@@ -3,7 +3,8 @@ import { CartButton } from "./CardButton/index.jsx"
 import { StyledHeader, StyledLogo, StyledLogoDiv} from "./style"
 import { Search } from "./search/index"
 
-export const Header = () => {
+
+export const Header = ({cart, setSearch, search, setIsOpen}) => {
 
 
 
@@ -12,11 +13,12 @@ export const Header = () => {
             <StyledLogoDiv isLeft={true}>
                 <StyledLogo src={logo} alt="Logo Burger Kenzie" />
 
-                <CartButton/>
+                <CartButton setIsOpen={setIsOpen} cart={cart}/>
             </StyledLogoDiv>
             <StyledLogoDiv>
-                <Search/>
+                <Search setSearch={setSearch} search={search}/>
             </StyledLogoDiv>
+
         </StyledHeader>
     )
 }

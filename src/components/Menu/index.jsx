@@ -4,11 +4,10 @@ import {api} from "../../assets/Requests/api"
 import { useEffect, useState } from "react"
 import {Card} from "./Card/index"
 
-export const Menu = () => {
+export const Menu = ({search, addItemToCard}) => {
     const [apiMenu, setApiMenu] = useState([])
     const [isLoading, setLoading] = useState(true)
 
-    
 
     useEffect(()=>{
         const apiCall = async()=>{
@@ -24,7 +23,7 @@ export const Menu = () => {
         }
         apiCall()
     },[])
-
+    
     if (isLoading){
         return(
             <SyledSection>
@@ -38,7 +37,9 @@ export const Menu = () => {
         <SyledSection>
             <StyledUlDeck>
                 {apiMenu.map((item) => {
-                    return <Card key={item.id} item={item}/>
+                    if(item.name.toLowerCase().includes(search.toLowerCase())){
+                        return <Card key={item.id} item={item} addItemToCard={addItemToCard}/>
+                    }
                 })}
             </StyledUlDeck>
         </SyledSection>

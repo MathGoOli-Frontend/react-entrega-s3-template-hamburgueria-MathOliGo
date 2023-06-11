@@ -10,7 +10,9 @@ export const StyledUlDeck = styled.ul`
     display: flex;
     gap: 1rem;
 
-    
     overflow-x: scroll;
-
+    
+    @media (min-width: 600px) {
+        flex-wrap: wrap;
+    }
 `

@@ -10,6 +10,7 @@ export const StyledLi = styled.li`
     display: flex;
     flex-direction: column;
 
+
     :hover{
         border: 2px solid var(--color-color-primary);
     }

@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 		--input-font-size: 1.6rem;
 
 		--radius: 5px;
+		
 		font-size: 62.5%;
     }
 

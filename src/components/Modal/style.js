@@ -19,7 +19,60 @@ export const StyledModalboxDiv = styled.div`
     position: relative;
     width: 100%;
     max-width: 400px;
-    padding: 2rem;
+    padding: 0;
     background-color: #fff;
 
+    border-radius: var(--radius);
+    overflow: hidden;
+
+`
+
+export const CloseDiv = styled.div`
+    width: 100%;
+    color: var(--color-white);
+    background-color: var(--color-color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+
+    button{
+        background-color: var(--color-color-primary);
+        color: var(--color-white);
+        border: none;
+    }
+`
+
+export const ContentDiv = styled.div`
+    padding: 1rem;
+    
+`
+
+export const TotalDiv = styled.div`
+    padding: 1rem;
+    border-top: 2px solid var(--color-grey-100);
+
+    div{
+        display:flex;
+        justify-content: space-between;
+    }
+    h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    span{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--color-grey-300)
+    }
+    button{
+        margin-top: 1rem;
+        width: 100%;
+        height: 6rem;
+        background-color: var(--color-grey-100);
+        color:var(--color-grey-300);
+        border: none;
+        border-radius: var(--radius)
+    }
 `

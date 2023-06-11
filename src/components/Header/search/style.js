@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SearchDiv = styled.div`
     width: 100%;
-    max-width: 300px;
+    
     display: flex;
     align-items: center;
     overflow-x: hidden;
@@ -21,8 +21,8 @@ export const SearchDiv = styled.div`
     }
 
     button{
-        width: 3rem;
-        height: 2.6rem;
+        width: 4rem;
+        height: 3.5rem;
         border: none;
         border-radius: var(--radius);
         background-color: var(--color-color-primary);

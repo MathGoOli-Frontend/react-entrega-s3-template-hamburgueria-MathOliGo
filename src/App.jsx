@@ -8,9 +8,9 @@ export const App = () => {
 
   return (
     <>
-    <GlobalStyle/>
-    <Header></Header>
-    <Menu></Menu>
+      <GlobalStyle/>
+      <Header></Header>
+      <Menu></Menu>
     </>
   )
 }

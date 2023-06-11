@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const StyledLi = styled.li`
-    width: 350px;
+    min-width: 300px;
     height: 346px;
 
     border: 2px solid var(--color-grey-100);
@@ -20,6 +20,12 @@ export const StyledLi = styled.li`
         justify-content: center;
 
         background-color: var(--color-grey-0);
+    }
+
+    img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     div{

@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     	--color-grey-600: #333333;
     	--color-grey-300: #828282;
     	--color-grey-100: #e0e0e0;
+    	--color-grey-0: #f5f5f5;
     	--color-negative: #e60000;
     	--color-warning: #ffcd07;
     	--color-sucess: #168821;
@@ -17,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 		--input-font-size: 1.6rem;
 
 		--radius: 5px;
+		font-size: 62.5%;
     }
 
 	*{
@@ -38,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 62.5%;
+		
 		font: inherit;
 		vertical-align: baseline;
 		font-family: "Inter";

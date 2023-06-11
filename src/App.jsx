@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { GlobalStyle } from './styles/global'
 import { Header } from './components/Header'
+import { Menu } from './components/Menu'
 
 export const App = () => {
 
@@ -9,7 +10,7 @@ export const App = () => {
     <>
     <GlobalStyle/>
     <Header></Header>
-    
+    <Menu></Menu>
     </>
   )
 }
